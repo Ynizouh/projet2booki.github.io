@@ -94,6 +94,16 @@ header nav ul li a:hover::before {
 
 /* search-bar */
 
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    border-radius: 30px;
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
 
 .fa-solid.fa-location-dot {
     margin-right: 250px;
