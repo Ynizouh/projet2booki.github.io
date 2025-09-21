@@ -265,6 +265,69 @@ a {
     color: var(--main-bg-color)
 }
 
+/** Hebergement à Marseille **/
+.village-and-populaires {
+    display: flex;
+    justify-content: space-between;
+}
+
+.village-and-village section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/****** Hebergements ***********/
+.village {
+    width: 65%;
+}
+
+/****** Populaires ***********/
+.village {
+    width: 32%;
+}
+
+.village-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.village-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.village-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.village-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.village-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.village-cards .card-subtitle {
+    margin: 0;
+}
+
+.village-cards .card-rating {
+    margin-bottom: 5px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
