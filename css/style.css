@@ -271,10 +271,10 @@ a {
     display: flex;
     gap: 40px;
     width: 100%;
-    max-width: 1340px;
+    max-width: 1440px;
     margin: 0 auto;
     box-sizing: border-box;
-    align-items: flex-start;
+    align-items: center;
 }
 
 /** Hebergement à Marseille **/
@@ -283,7 +283,7 @@ a {
     justify-content: space-between;
 }
 
-.village-and-village section {
+.village section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -460,7 +460,7 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 40px;
     gap: 40px;
