@@ -278,6 +278,68 @@ a {
     align-items: center;
 }
 
+.activite-a-marseille section {
+    display: flex;
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.activite-a-marseille {
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.activite-a-marseille-title {
+    display: flex;
+    width: 811px;
+    height: 26px;
+    justify-content: space-between;
+    align-items: center;
+    size: 22px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--main-text-color);
+}
+
+.activite-a-marseille-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.activite-a-marseille-cards>a {
+    flex: 0 1 30%;
+    max-width: 30%;
+    min-width: 250px;
+    box-sizing: border-box;
+}
+
+.activite-a-marseille-cards .card {
+    height: 100%;
+    border-radius: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.activite-a-marseille-cards img {
+    width: 100%;
+    height: 124px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 /** Hebergement à Marseille **/
 .Hebergements-a-marseille-and-populaires {
     display: flex;
