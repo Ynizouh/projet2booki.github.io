@@ -288,32 +288,32 @@ a {
 
 .activite-a-marseille {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 40px auto 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .activite-a-marseille>a {
-    padding: 30px;
-    flex-direction: column;
-    gap: 30px;
-    background-color: transparent;
+    flex: 1 1 0;
+    max-width: 297px;
+    min-width: 220px;
+    text-decoration: none;
 }
 
 .activite-a-marseille-title {
     width: 100%;
+    margin-bottom: 30px;
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 30px;
 }
 
 .activite-a-marseille-cards {
     display: flex;
     gap: 30px;
-    justify-content: center;
     width: 100%;
+    justify-content: flex-start;
 }
 
 .activite-a-marseille-cards a {
@@ -323,29 +323,36 @@ a {
 }
 
 .activite-a-marseille-cards .card {
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 0 16px 0;
+    background: transparent;
+    border-radius: 18px;
+    box-shadow: none;
+    padding: 0;
     border: none;
-    transition: transform 0.2s;
+    transition: box-shadow 0.2s;
 }
 
 .activite-a-marseille-cards .card img {
     width: 100%;
-    height: 170px;
+    height: 315px;
     object-fit: cover;
     border-radius: 18px 18px 0 0;
-    box-shadow: none;
-    border: none;
+    display: block;
 }
 
 .activite-a-marseille-cards .card-content {
-    padding: 0 16px;
     width: 100%;
+    background: #fff;
+    border-radius: 0 0 20px 20px;
+    padding: 20px;
+    margin-bottom: 0px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .activite-a-marseille-cards .card-title {
