@@ -101,6 +101,7 @@ header nav ul li a:hover::before {
     display: flex;
     align-items: center;
     box-sizing: border-box;
+
 }
 
 .fa-solid.fa-location-dot {
