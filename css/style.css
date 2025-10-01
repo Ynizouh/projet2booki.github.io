@@ -291,11 +291,12 @@ a {
 
 .activite-a-marseille {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1440px;
     margin: 40px auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 0 50px;
 }
 
 .activite-a-marseille>a {
@@ -321,8 +322,9 @@ a {
 
 .activite-a-marseille-cards a {
     flex: 1 1 0;
-    max-width: 250px;
+    max-width: 297.5px;
     min-width: 200px;
+    margin-bottom: 30px;
 }
 
 .activite-a-marseille-cards .card {
@@ -340,7 +342,7 @@ a {
 
 .activite-a-marseille-cards .card img {
     width: 100%;
-    height: 315px;
+    height: 380px;
     object-fit: cover;
     border-radius: 18px 18px 0 0;
     display: block;
