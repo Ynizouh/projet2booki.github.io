@@ -592,7 +592,15 @@ footer {
         align-items: stretch;
     }
 
-    .Hebergements-a-marseille,
+    .Hebergements-a-marseille {
+        flex: 3;
+        width: 924px;
+        height: 611.5px;
+        border-radius: 15px;
+        padding: 30px;
+        gap: 30px;
+    }
+
     .populaires {
         width: 100%;
         max-width: 100%;
@@ -605,12 +613,41 @@ footer {
     }
 
     .Hebergements-a-marseille-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
         gap: 20px;
     }
 
+    .Hebergements-a-marseille-cards .card {
+        display: flex;
+        flex-direction: column;
+        width: 268px;
+        height: 207.25px;
+        border-radius: 20px;
+        padding-bottom: 15px;
+        gap: 4px;
+    }
+
+    .Hebergements-a-marseille-cards .card-title {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+
+    .Hebergements-a-marseille-cards img {
+        height: 124px;
+        width: 268px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border: 5px;
+    }
+
     .Hebergements-a-marseille-cards>a {
-        flex: 1 1 45%;
-        max-width: 48%;
+        flex: 0 1 calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+        min-width: 250px;
+        box-sizing: border-box;
     }
 
     .populaires-cards .card {
