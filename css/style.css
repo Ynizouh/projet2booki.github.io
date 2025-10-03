@@ -141,7 +141,8 @@ header nav ul li a:hover::before {
     padding: 10px 18px;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 0px 20px 20px 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     transition: background-color 0.35s ease;
 }
 
@@ -584,12 +585,65 @@ footer {
 @media (max-width: 1024px) {
     .main-container {
         padding: 0 20px;
+        width: 1024px;
+        height: 1893.52px;
+        padding-left: 50px;
+        padding-right: 50px;
+        gap: 35px;
+    }
+
+    .search-bar {
+        margin-top: 30px;
     }
 
     .section-group {
         flex-direction: column;
         gap: 30px;
         align-items: stretch;
+    }
+
+    .filters-bar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .filters-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-right: 0;
+        margin-bottom: 5px;
+        white-space: nowrap;
+    }
+
+    .filters-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .filter-button {
+        font-size: 14px;
+        padding: 8px 20px;
+        border-radius: 25px;
+        margin: 0;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border: 2px solid #DEEBFF;
+        transition: background-color 0.35s;
+    }
+
+    .filter-button:hover {
+        background: var(--filter-bg-color);
     }
 
     .Hebergements-a-marseille {
@@ -602,9 +656,49 @@ footer {
     }
 
     .populaires {
-        width: 100%;
-        max-width: 100%;
-        padding: 20px;
+        width: 924px;
+        height: 252px;
+        border-radius: 15px;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .populaires-cards .card {
+        width: 274.67px;
+        height: 146px;
+        border-radius: 20px;
+    }
+
+    .populaires-cards .card-content {
+        display: flex;
+        flex-direction: column;
+        width: 183.11px;
+        height: 136px;
+        top: 5px;
+        left: 91.56px;
+        padding-left: 15px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        gap: 24px;
+        box-sizing: content-box;
+    }
+
+    .populaires-cards img {
+        width: 91.56px;
+        height: 146px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top: 5px;
+        border-left: 5px;
+        border-bottom: 5px;
     }
 
     .Hebergements-a-marseille-title,
@@ -650,20 +744,53 @@ footer {
         box-sizing: border-box;
     }
 
-    .populaires-cards .card {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .filters-bar {
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 10px;
+    .activite-a-marseille {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 924px;
+        height: 390.02px;
+        padding: 30px;
+        gap: 30px;
     }
 
     .activite-a-marseille-cards {
-        gap: 15px;
+        display: flex;
+        width: 864px;
+        height: 270px;
+        gap: 30px;
     }
+
+    .activite-a-marseille-cards .card {
+        width: 193.5px;
+        height: 270px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: transparent;
+        box-shadow: 0 3 15 0 rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.2s;
+    }
+
+    .activite-a-marseille-cards .card img {
+        width: 193.5px;
+        height: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: flex-start;
+        width: auto;
+        margin: 0;
+        height: 163px;
+        gap: 30px;
+        background-color: var(--main-bg-color);
+    }
+
+
 }
 
 /* Small devices (phones, less than 768px) */
