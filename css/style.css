@@ -1059,13 +1059,11 @@ footer {
         flex-direction: column;
         width: 100%;
         max-width: 375px;
-        /* ne dépasse pas la largeur mobile */
         height: 965.02px;
         padding: 30px;
         gap: 30px;
         margin-top: 200px;
         margin-left: auto;
-        /* centre sans bord gauche/droite */
         margin-right: auto;
         box-sizing: border-box;
     }
@@ -1077,7 +1075,6 @@ footer {
         height: 845px;
         gap: 15px;
         margin: 0 auto;
-        /* centré */
         box-sizing: border-box;
     }
 
