@@ -1233,7 +1233,7 @@ footer {
         max-width: 100%;
         box-sizing: border-box;
         height: auto;
-        padding: 30px 20px;
+        padding: 20px 0px;
         gap: 30px;
         margin-top: 0px;
     }
@@ -1247,7 +1247,7 @@ footer {
     }
 
     .activite-a-marseille-cards .card {
-        width: 100%;
+        width: 315px;
         height: 200px;
         border-radius: 20px;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
