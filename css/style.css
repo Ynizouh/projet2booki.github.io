@@ -1052,32 +1052,34 @@ footer {
     }
 
     .populaires-cards .card {
-        width: 335px;
+        width: 369px;
         height: 146px;
         border-radius: 20px;
-        box-shadow: 0 3 15 0 rgba(0, 0, 0, 0.1);
+        display: flex;
+        margin-top: 33px;
+        padding: 5px;
+        box-sizing: border-box;
     }
 
     .populaires-cards img {
         width: 111.67px;
-        height: 146px;
+        height: 136px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        border-top: 5px;
-        border-left: 5px;
-        border-bottom: 5px;
-        border-color: white;
+        object-fit: cover;
     }
 
     .populaires-cards .card-content {
         width: 223.33px;
         height: 136px;
-        top: 5px;
-        left: 111.67px;
-        padding-left: 15px;
-        padding-bottom: 5px;
-        padding-right: 5px;
         padding-top: 10px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
         gap: 24px;
     }
 
@@ -1097,6 +1099,7 @@ footer {
         height: 1435.5px;
         padding: 20px;
         gap: 15px;
+        background-color: white;
     }
 
     .Hebergements-a-marseille-cards {
