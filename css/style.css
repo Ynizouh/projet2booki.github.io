@@ -1296,12 +1296,14 @@ footer {
     }
 
     .footer-container {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
         height: auto;
         gap: 40px;
         margin: 0;
+        padding: 0px;
     }
 
     .footer-title {
@@ -1320,6 +1322,7 @@ footer {
         line-height: 100%;
         letter-spacing: 0px;
         color: var(--main-text-color);
+        justify-content: flex-start;
     }
 
     .footer-container li {
