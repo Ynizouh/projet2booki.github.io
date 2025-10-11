@@ -546,7 +546,6 @@ a {
 
 /***Footer***/
 footer {
-    background-color: var(--main-bg-color);
     color: var(--main-text-color);
     padding: 40px 0 20px 0;
     font-size: 16px;
@@ -799,7 +798,6 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-
     * {
         box-sizing: border-box;
     }
@@ -914,6 +912,7 @@ footer {
     }
 
     .search-bar {
+        display: flex;
         width: 100%;
         max-width: 335px;
         height: 49px;
@@ -922,6 +921,9 @@ footer {
         background-color: white;
     }
 
+    .search-form {
+        padding-left: 20px;
+    }
 
     .search-input {
         width: 147px;
@@ -972,6 +974,21 @@ footer {
         background-color: var(--main-text-color);
         color: white;
         transition: background-color 0.35s ease;
+    }
+
+
+    .fa-solid.fa-location-dot {
+        margin-right: 280px;
+        margin: auto 0;
+        font-size: 15px;
+        color: var(--main-text-color);
+        background-color: var(--main-bg-color);
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        padding-left: 10px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        padding-right: 10px;
     }
 
     .filters-bar {
@@ -1281,7 +1298,6 @@ footer {
         width: 100%;
         height: auto;
         gap: 40px;
-        padding: 0;
         margin: 0;
     }
 
