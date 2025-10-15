@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+
 }
 
 :root {
@@ -14,21 +15,15 @@
     color: var(--main-color);
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
 .main-container {
     flex: 1;
-    width: 100%;
+    width: auto;
     max-width: 1440px;
-    min-width: 320px;
-    padding: 0 50px;
-    margin: 0 auto;
+    min-width: 1024px;
+    padding: 0px 50px 20px 50px;
     box-sizing: border-box;
-    margin-top: 10px;
+    margin: 0 auto;
+    margin-top: 8px;
 }
 
 /* Header */
@@ -36,28 +31,40 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 0;
+    width: auto;
+    min-width: 1024px;
+    height: 59px;
+    box-sizing: border-box;
 }
 
 header img {
-    height: 20px;
-    width: auto;
-    margin: 20px 0;
+    height: 19px;
+    width: 61.09px;
+    margin-bottom: 10px;
 }
 
-header nav ul {
+nav .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 68px;
     padding: 0;
-    margin: 0;
-    font-size: 15px;
+    margin: 10px 0px 40px 0px;
+    font-size: 16px;
+    align-items: center;
+}
+
+header nav ul li {
+    position: relative;
 }
 
 header nav ul li a {
-    position: relative;
-    padding: 10px 0;
+    display: block;
+    padding: 13px 0;
     color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    position: relative;
 }
 
 header nav ul li a:hover {
@@ -80,19 +87,30 @@ header nav ul li a:hover::before {
     transform: scaleX(1);
 }
 
-/****** Hero Section ***********/
+/****** hero Section ***********/
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    max-width: 1440px;
+    height: auto;
+}
+
 .hero-title {
-    font-size: 20px;
+    font-size: 22px;
     color: var(--main-text-color);
-    margin-top: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0px;
     margin-bottom: 5px;
 }
 
 .hero-subtitle {
-    font-size: 12px;
-    margin: 0;
-    margin-bottom: 10px;
-    font-weight: 500;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-weight: 400;
 }
 
 /* search-bar */
@@ -101,21 +119,22 @@ header nav ul li a:hover::before {
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    margin-bottom: 35px;
 
 }
 
-.fa-solid.fa-location-dot {
-    margin-right: 280px;
-    margin: auto 0;
-    font-size: 15px;
-    color: var(--main-text-color);
+.rectangle {
     background-color: var(--main-bg-color);
-    border-bottom-left-radius: 30px;
-    border-top-left-radius: 30px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 10px 18px;
+    border: 1px var(--main-bg-color)
+}
+
+.fa-solid.fa-location-dot {
+    width: 14px;
+    height: 18px;
+    color: var(--main-text-color);
 }
 
 .search-input {
@@ -178,7 +197,6 @@ header nav ul li a:hover::before {
 
 .filter-title h2 {
     font-size: 18px;
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 0px;
@@ -197,13 +215,13 @@ header nav ul li a:hover::before {
 }
 
 .filter-button {
-    border: 2px solid #ffffff;
-    border-radius: 25px 25px 25px 25px;
-    padding: 4px 15px 4px 15px;
-    margin: 19px 0;
-    font-size: 14px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 10px 19px 10px 19px;
+    font-size: 17px;
     font-weight: bold;
     cursor: pointer;
+    background-color: white;
     transition: background-color 0.35s ease;
 }
 
@@ -229,37 +247,38 @@ header nav ul li a:hover::before {
 
 .info i {
     margin-right: 8px;
-    font-size: 12px;
+    font-size: 16px;
     border: 1px solid #D9D9D9;
     border-radius: 50%;
     padding: 2px;
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.info p {
-    font-size: 12px;
-    margin: 0;
-}
 
+/*section group*/
 a {
     color: inherit;
     text-decoration: none;
 }
 
+.section-group {
+    display: flex;
+    gap: 40px;
+    width: auto;
+    max-width: 1340px;
+    min-width: 1024px;
+    height: auto;
+    max-height: 614px;
+    gap: 30px;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
-}
-
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
@@ -281,32 +300,16 @@ a {
 
 /**section group**/
 
-.section-group {
-    display: flex;
-    gap: 40px;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    align-items: center;
-}
-
-.activite-a-marseille section {
-    display: flex;
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-}
 
 .activite-a-marseille {
-    width: 100%;
-    max-width: 1440px;
+    width: auto;
+    max-width: 1340px;
     margin: 40px auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 50px;
+    padding: 30px;
+    gap: 30px;
 }
 
 .activite-a-marseille>a {
@@ -317,16 +320,27 @@ a {
 }
 
 .activite-a-marseille-title {
-    width: 100%;
+    width: auto;
+    max-width: 1280px;
+    height: auto;
+    max-height: 30.02px;
     margin-bottom: 30px;
+    font-family: 'raleway', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0px;
     display: flex;
     justify-content: flex-start;
 }
 
 .activite-a-marseille-cards {
+    width: auto;
+    max-width: 1280px;
+    height: auto;
+    max-height: 439px;
     display: flex;
     gap: 30px;
-    width: 100%;
     justify-content: flex-start;
 }
 
@@ -338,33 +352,40 @@ a {
 }
 
 .activite-a-marseille-cards .card {
-    width: 100%;
+    width: 297.5px;
+    height: auto;
+    max-height: 439px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     background: transparent;
-    border-radius: 18px;
+    border-radius: 20px;
     box-shadow: none;
     padding: 0;
-    border: none;
+    box-shadow: 0px 3px 15px 0 rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.2s;
 }
 
 .activite-a-marseille-cards .card img {
-    width: 100%;
+    width: auto;
+    max-width: 297.5px;
     height: 380px;
     object-fit: cover;
-    border-radius: 18px 18px 0 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     display: block;
 }
 
 .activite-a-marseille-cards .card-content {
-    width: 100%;
+    width: auto;
+    max-width: 297.5px;
+    height: auto;
+    max-height: 59px;
     background: #fff;
     border-radius: 0 0 20px 20px;
-    padding: 20px;
+    padding: 20px 20px 19px 19px;
+    gap: 10px;
     margin-bottom: 0px;
-    min-height: 60px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -379,35 +400,28 @@ a {
 
 
 /** Hebergement à Marseille **/
-.Hebergements-a-marseille-and-populaires {
-    display: flex;
-    justify-content: space-between;
-}
-
-.Hebergements-a-marseille section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-}
 
 .Hebergements-a-marseille {
     flex: 2;
+    width: auto;
+    max-width: 871px;
+    height: auto;
+    max-height: 614px;
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 .Hebergements-a-marseille-title {
     display: flex;
     width: 811px;
     height: 26px;
-    justify-content: space-between;
     align-items: center;
-    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
     line-height: 100%;
     letter-spacing: 0px;
     color: var(--main-text-color);
@@ -428,16 +442,25 @@ a {
 }
 
 .Hebergements-a-marseille-cards .card {
+    background-color: white;
+    width: auto;
+    max-width: 250.33px;
     height: 100%;
+    max-height: 207.25px;
     border-radius: 20px;
     padding-bottom: 15px;
     display: flex;
     flex-direction: column;
     gap: 4px;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-top: 5px solid white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .Hebergements-a-marseille-cards img {
-    width: 100%;
+    width: auto;
+    max-width: 250.33px;
     height: 124px;
     object-fit: cover;
     border-top-left-radius: 20px;
@@ -445,21 +468,27 @@ a {
 }
 
 .Hebergements-a-marseille-cards .card-content {
-    width: 67%;
+    width: auto;
+    max-width: 250.33px;
+    min-width: 180px;
+    height: auto;
+    max-height: 207.25px;
     padding-left: 15px;
+    padding-right: 15px;
+    gap: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .Hebergements-a-marseille-cards .card-title {
     margin-top: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    font-size: 16px;
 }
 
 .Hebergements-a-marseille-cards .card-subtitle {
     margin: 0;
+    font-size: 14px;
 }
 
 .Hebergements-a-marseille-cards .card-rating {
@@ -467,35 +496,24 @@ a {
 }
 
 .Hebergements-a-marseille-more {
-    width: 811px;
-    height: 21px;
-    color: var(--main-text-color);
-    text-align: left;
+    font-weight: 700;
+    font-size: 18px;
     font-weight: bold;
     font-family: "Raleway", sans-serif;
     line-height: 100%;
     letter-spacing: 0px;
+    margin-top: 0px;
     cursor: pointer;
-}
-
-/****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
-    display: flex;
-    justify-content: space-between;
-}
-
-.populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
 }
 
 /****** Populaires ***********/
 .populaires {
     flex: 1;
-    background-color: #F2F2F2;
+    width: 429px;
+    height: auto;
+    max-height: 614px;
     border-radius: 15px;
+    background-color: #F2F2F2;
     padding: 30px;
     gap: 30px;
     display: flex;
@@ -509,22 +527,36 @@ a {
 }
 
 .populaires-cards .card {
-    width: 369px;
-    height: 146px;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 369px;
+    height: 100%;
+    max-height: 146px;
     border-radius: 20px;
     display: flex;
-    margin-top: 33px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-top: 15px;
+    border: 5px solid white;
+    border-width: 5px 0px 5px 5px;
+
 }
 
 .populaires-cards img {
-    width: 33%;
+    width: auto;
+    max-width: 123px;
+    height: auto;
+    max-height: 146px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
 .populaires-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
+    width: auto;
+    max-width: 246px;
+    min-width: 153px;
+    height: auto;
+    max-height: 136px;
+    padding: 0px 5px 5px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -532,16 +564,33 @@ a {
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    width: auto;
+    max-width: 226px;
+    height: 100%;
+    max-height: 19px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0px;
+
 }
 
 .populaires-cards .card-subtitle {
-    margin: 0;
+    width: auto;
+    max-width: 226px;
+    height: auto;
+    max-height: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0px;
+    margin-top: 0;
+
 }
 
 .populaires-cards .card-rating {
-    margin-bottom: 5px;
+    padding-top: 50px;
+    margin-bottom: 0px;
 }
 
 /***Footer***/
@@ -549,7 +598,7 @@ footer {
     color: var(--main-text-color);
     padding: 40px 0 20px 0;
     font-size: 16px;
-    width: 100%;
+    width: auto;
     margin-top: auto;
 }
 
@@ -560,6 +609,7 @@ footer {
     margin: 0 auto;
     padding: 0 40px;
     gap: 40px;
+    background-color: #F2F2F2;
 }
 
 .footer-title {
@@ -584,6 +634,19 @@ footer {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
+/* Large devices (laptops/desktops, less/equal than 1440px) */
+@media (max-width: 1440px) {
+    body {
+        max-width: 1900px;
+        width: auto;
+        height: auto;
+        overflow-x: hidden;
+        gap: 35px;
+        margin: 0 auto;
+    }
+}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .main-container {
@@ -593,6 +656,7 @@ footer {
         padding-left: 50px;
         padding-right: 50px;
         gap: 35px;
+        margin: 0 auto;
     }
 
     .search-bar {
@@ -608,7 +672,7 @@ footer {
     .filters-bar {
         display: flex;
         align-items: center;
-        width: 100%;
+        width: auto;
         gap: 10px;
         margin-top: 30px;
         margin-bottom: 40px;
@@ -629,7 +693,7 @@ footer {
         gap: 15px;
         flex-wrap: wrap;
         justify-content: flex-start;
-        width: 100%;
+        width: auto;
     }
 
     .filter-button {
@@ -706,7 +770,7 @@ footer {
 
     .Hebergements-a-marseille-title,
     .Hebergements-a-marseille-more {
-        width: 100%;
+        width: auto;
     }
 
     .Hebergements-a-marseille-cards {
@@ -804,7 +868,7 @@ footer {
 
     body {
         max-width: 100vw;
-        width: 100%;
+        width: auto;
         height: auto;
         overflow-x: hidden;
         gap: 35px;
@@ -813,10 +877,11 @@ footer {
 
     .main-container {
         padding: 0 20px;
-        width: 100%;
+        width: auto;
         flex-direction: column;
         align-items: center;
         gap: 35px;
+        margin: 0 auto;
     }
 
     header {
@@ -824,7 +889,7 @@ footer {
         align-items: center;
         gap: 0;
         padding: 30px 0 0 0;
-        width: 100%;
+        width: auto;
         height: auto;
     }
 
@@ -835,7 +900,7 @@ footer {
     }
 
     header nav {
-        width: 100%;
+        width: auto;
         border-bottom: 2px solid #F2F2F2;
     }
 
@@ -846,7 +911,7 @@ footer {
         gap: 0;
         padding: 0;
         margin: 0;
-        width: 100%;
+        width: auto;
     }
 
     header nav ul.nav-links li {
@@ -880,17 +945,18 @@ footer {
         width: 375px;
         height: 3982.52px;
         gap: 35px;
+        margin: 0 auto;
     }
 
     .hero {
-        width: 100%;
+        width: auto;
         max-width: 335px;
         height: auto;
         gap: 8px;
     }
 
     .hero-title {
-        width: 100%;
+        width: auto;
         height: auto;
         font-family: "Raleway", sans-serif;
         font-weight: 700;
@@ -901,9 +967,8 @@ footer {
     }
 
     .hero-subtitle {
-        width: 100%;
+        width: auto;
         height: auto;
-        font-family: 'raleway', sans-serif;
         font-size: 16px;
         font-weight: 400;
         line-height: 100%;
@@ -913,7 +978,7 @@ footer {
 
     .search-bar {
         display: flex;
-        width: 100%;
+        width: auto;
         max-width: 335px;
         height: 49px;
         border-radius: 15px;
@@ -929,7 +994,6 @@ footer {
         height: 21px;
         top: 14px;
         left: 74px;
-        font-family: 'Raleway', sans-serif;
         font-weight: 700;
         font-size: 18px;
         line-height: 100%;
@@ -1000,7 +1064,7 @@ footer {
     .filters-bar {
         flex-direction: column;
         align-items: flex-start;
-        width: 100%;
+        width: auto;
         max-width: 335px;
         height: auto;
         gap: 20px;
@@ -1008,7 +1072,7 @@ footer {
 
     .filters-buttons {
         flex-wrap: wrap;
-        width: 100%;
+        width: auto;
         height: auto;
         gap: 10px;
     }
@@ -1042,7 +1106,6 @@ footer {
         width: 375px;
         max-width: 375px;
         height: 38px;
-        font-family: 'Raleway', sans-serif;
         font-size: 16px;
         font-weight: 400;
         line-height: 100%;
@@ -1063,7 +1126,7 @@ footer {
     }
 
     .populaires-title {
-        width: 100%;
+        width: auto;
         max-width: 335px;
         height: auto;
         padding: 10px 0px 0px 20px;
@@ -1077,9 +1140,8 @@ footer {
     }
 
     .populaires-title h2 {
-        width: 100%;
+        width: auto;
         height: auto;
-        font-family: 'Raleway', sans-serif;
         font-weight: 700;
         font-size: 22px;
         line-height: 100%;
@@ -1089,7 +1151,7 @@ footer {
 
     .populaires-cards {
         gap: 15px;
-        width: 100%;
+        width: auto;
         height: auto;
         display: block;
         padding: 10px;
@@ -1134,7 +1196,7 @@ footer {
 
     .section-group {
         flex-direction: column;
-        width: 100%;
+        width: auto;
         height: auto;
         gap: 15px;
         margin: 0;
@@ -1144,8 +1206,8 @@ footer {
         order: 2;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        max-width: 100%;
+        width: auto;
+        max-width: auto;
         box-sizing: border-box;
         height: auto;
         margin-top: 0;
@@ -1159,7 +1221,7 @@ footer {
         flex-wrap: nowrap;
         flex-direction: column;
         gap: 15px;
-        width: 100%;
+        width: auto;
     }
 
     .Hebergements-a-marseille-cards>a {
@@ -1173,7 +1235,7 @@ footer {
     }
 
     .Hebergements-a-marseille-cards .card {
-        width: 100%;
+        width: auto;
         height: auto;
         border-radius: 20px;
         padding-bottom: 15px;
@@ -1182,7 +1244,7 @@ footer {
     }
 
     .Hebergements-a-marseille-cards img {
-        width: 100%;
+        width: auto;
         height: 124px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -1191,22 +1253,21 @@ footer {
     }
 
     .card {
-        width: 100%;
+        width: auto;
         box-sizing: border-box;
         padding: 0px;
     }
 
     .Hebergements-a-marseille-cards .card-content {
-        width: 100%;
+        width: auto;
         height: auto;
         padding: 10px 15px;
         gap: 4px;
     }
 
     .Hebergements-a-marseille-title {
-        width: 100%;
+        width: auto;
         height: auto;
-        font-family: 'raleway', sans-serif;
         font-weight: 700;
         font-size: 22px;
         line-height: 100%;
@@ -1216,9 +1277,8 @@ footer {
     }
 
     .Hebergements-a-marseille-more {
-        width: 100%;
+        width: auto;
         height: auto;
-        font-family: 'raleway', sans-serif;
         font-weight: 700;
         font-size: 18px;
         line-height: 100%;
@@ -1232,8 +1292,8 @@ footer {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
-        width: 100%;
-        max-width: 100%;
+        width: auto;
+        max-width: auto;
         box-sizing: border-box;
         height: auto;
         padding: 20px 0px;
@@ -1243,8 +1303,8 @@ footer {
 
     .activite-a-marseille-cards {
         flex-direction: column;
-        width: 100%;
-        max-width: 100%;
+        width: auto;
+        max-width: auto;
         height: auto;
         gap: 15px;
     }
@@ -1257,14 +1317,14 @@ footer {
     }
 
     .activite-a-marseille-cards .card img {
-        width: 100%;
+        width: auto;
         height: 141px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
 
     .activite-a-marseille-cards .card-content {
-        width: 100%;
+        width: auto;
         height: auto;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
@@ -1275,7 +1335,6 @@ footer {
     .activite-a-marseille-title {
         width: 277px;
         height: 19px;
-        font-family: 'raleway', sans-serif;
         font-weight: 700;
         font-size: 16px;
         line-height: 100%;
@@ -1288,8 +1347,8 @@ footer {
     }
 
     footer {
-        width: 100%;
-        max-width: 100%;
+        width: auto;
+        max-width: auto;
         box-sizing: border-box;
         height: auto;
         padding: 30px;
@@ -1302,7 +1361,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 100%;
+        width: auto;
         height: auto;
         gap: 40px;
         margin: 0;
@@ -1310,7 +1369,6 @@ footer {
     }
 
     .footer-title {
-        font-family: 'Raleway', sans-serif;
         font-weight: 700;
         font-size: 18px;
         line-height: 100%;
@@ -1319,7 +1377,6 @@ footer {
     }
 
     .footer-container ul {
-        font-family: 'raleway', sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 100%;
@@ -1329,7 +1386,6 @@ footer {
     }
 
     .footer-container li {
-        font-family: 'Raleway', sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 100%;
