@@ -539,8 +539,32 @@ footer {
         border-top: none;
     }
 
+    .nav-menu:hover::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--main-color);
+        transform: scaleX(1);
+        transition: transform 0.35s;
+    }
+
+    .search-bar {
+        display: flex;
+        width: 100%;
+        height: 60px;
+    }
+
     .search-button {
         display: none;
+    }
+
+    .search-form {
+        display: flex;
+        align-items: center;
+        width: 100%;
     }
 
     .search-button-mobile {
@@ -550,17 +574,82 @@ footer {
         background-color: var(--main-color);
         border: 1px solid var(--main-color);
         border-radius: 15px;
-        padding: 15px 16px;
-        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+        padding: 20px 20px;
     }
 
-    .fa-solid.fa-location-dot {
-        display: none;
+    .rectangle {
+        height: 60px;
+        width: 60px;
+        border-radius: 15px 0 0 15px;
     }
 
     .search-button-mobile i {
         height: 17px;
         width: 17px;
         color: white;
+    }
+
+    .info-group {
+        padding: 0 20px;
+    }
+
+    .filters-buttons {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 15px;
+    }
+
+    .section-group section {
+        border-radius: 0px;
+        padding: 30px 20px;
+    }
+
+    .section-group {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .section-group .Hebergements-a-marseille {
+        background-color: white;
+    }
+
+    .Hebergements-a-marseille-cards {
+        gap: 15px;
+    }
+
+    .ligne-card {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .Hebergements-a-marseille .card {
+        width: auto;
+    }
+
+    .activite-a-marseille-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .activite-a-marseille-cards .card img {
+        height: 141px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px;
+    }
+
+    .footer-group {
+        padding: 0;
     }
 }
