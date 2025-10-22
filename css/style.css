@@ -546,6 +546,7 @@ footer {
     .search-bar {
         display: flex;
         height: 60px;
+        border: none;
     }
 
     .search-button {
@@ -566,7 +567,7 @@ footer {
         border: 1px solid var(--main-color);
         border-radius: 15px;
         padding: 20px 20px;
-        margin: 0px -7px 0px 0px;
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
     }
 
     .rectangle {
