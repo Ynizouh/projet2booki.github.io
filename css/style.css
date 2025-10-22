@@ -534,21 +534,8 @@ footer {
         border-bottom: 2px solid var(--main-bg-color);
     }
 
-    .nav-menu:hover {
-        border-bottom: 2px solid var(--main-color);
-        border-top: none;
-    }
-
     .nav-menu:hover::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: var(--main-color);
-        transform: scaleX(1);
-        transition: transform 0.35s;
+        top: 25px
     }
 
     .search-bar {
