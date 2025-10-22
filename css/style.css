@@ -206,6 +206,11 @@ header img {
     margin-top: 15px;
 }
 
+.ligne-filtres {
+    display: flex;
+    gap: 15px;
+}
+
 .filters-title {
     font-size: 18px;
     font-weight: 700;
@@ -582,8 +587,12 @@ footer {
 
     .filters-buttons {
         flex-direction: column;
-        flex-wrap: nowrap;
         gap: 15px;
+        width: 100%;
+    }
+
+    .filter-button {
+        width: 100%;
     }
 
     .section-group section {
