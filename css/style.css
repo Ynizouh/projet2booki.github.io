@@ -537,10 +537,6 @@ footer {
         border-bottom: #0065FC 3px solid;
     }
 
-    .nav-menu:hover::before {
-        top: none
-    }
-
     .search-bar {
         display: flex;
         height: 60px;
